@@ -157,7 +157,7 @@
             validWords.forEach(validWord => {
                 let score = calculateScore(validWord);
                 appendedWordCount++;
-                if (appendedWordCount % 3 == 0){
+                if (appendedWordCount % 5 == 0){
                     results.append(`${validWord}[${score}]`);
                     results.append(document.createElement("br"));
                 }else if (appendedWordCount == validWordCount){

@@ -67,7 +67,8 @@
     color: lightblue;
     text-align: center;
     letter-spacing: 1.3px;
-    line-height: 30px;
+    line-height: 40px;
+    font-size: 25px;
 }
 
 .slidecontainer{
