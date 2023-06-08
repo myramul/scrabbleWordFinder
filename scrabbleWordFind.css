@@ -1,0 +1,136 @@
+*{
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    background-color: #161616;
+    color:white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: scrabble;
+    src: url(Scramblemixed-YEdO.ttf);
+}
+
+@font-face{
+    font-family: tiles;
+    src: url(Tilez-8O8A.ttf);
+}
+
+.inputContainer{
+    margin: 10% auto;
+    text-align: center;
+}
+
+#inputLetters{
+    width: 500px;
+    height: 65px;
+    font-size: 60px;
+    border: 1px solid white;
+    color: pink;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: tiles, monospace;
+}
+
+#inputLetters::placeholder{
+    color:#BCC6F5;
+    opacity: 1;
+    font-size: 40px;
+    font-family: Menlo, Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.lengthContainer{
+    font-size: 15px;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.lengthLabel{
+    color: lightblue;
+}
+
+.title {
+    letter-spacing: 2px;
+    color: #BCC6F5;
+    font-family: scrabble, monospace;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.validWordsHeading{
+    color: lightblue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#results{
+    color: lightblue;
+    text-align: center;
+    letter-spacing: 1.3px;
+    line-height: 30px;
+}
+
+.slidecontainer{
+    width: 100%;
+    display: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25%;
+    height: 15px;
+    background: #161616;
+    outline: pink;
+    border: solid 1px lightblue;
+    border-radius: 10px;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: lightblue;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.slider::-moz-range-thumb{
+    width: 15px;
+    height: 15px;
+    background: lightblue;
+    cursor: pointer;
+}
+
+#sliderValue{
+    line-height: 1px;
+    color: lightblue;
+}
+
+#goBtn{
+    cursor: pointer;
+    height: 35px;
+    width: 75px;
+    color: pink;
+    border: 1px solid pink;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#goBtn:hover{
+    color:#161616;
+    background-color: pink;
+}
+
+#goBtn:active{
+    color:#161616;
+    background-color: pink;
+    scale: 0.95;
+}
+
+#errorMsg{
+    color: rgb(153, 3, 228);
+    font-style: italic;
+    display: none;
+}

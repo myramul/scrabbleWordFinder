@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Word Finder</title>
+
+    <link rel="stylesheet" href="scrabbleWordFind.css">
+</head>
+<body>
+    
+
+    <div class = "inputContainer">
+        <h1 class = "title">scrabble word finder</h1>
+        <input type="text" id="inputLetters" maxlength="10" placeholder="type letters...">
+        <p id="errorMsg"></p>
+        <br><br>
+
+        <div class = "lengthContainer">
+            <label for="specifyLength" class = "lengthLabel">specify word length</label>
+            <input type="checkbox" id="specifyLength">
+        </div>
+        
+    
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" step="1" value="7" class="slider" id="lengthSlider">
+            <p id ="sliderValue"></p>
+        </div>
+        <br>
+        <button type="button" id="goBtn">find</button>
+        <br>
+        <p class = "validWordsHeading">valid words<br></p>
+        <br>
+        <div id = "results"></div>
+    </div>
+
+    <script type="module" src="englishDictionary.js"></script>
+    <script type="module" src="scrabbleWordFind.js"></script>
+</body>
+</html>
